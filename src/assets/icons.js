@@ -1,0 +1,43 @@
+import {
+  faAnchor,
+  faBolt,
+  faCube,
+  faLeaf,
+  faRocket,
+  faStar,
+  faMoon,
+  faSun,
+  faHeart,
+  faDiamond,
+  faCloud,
+  faFire,
+  faSnowflake,
+  faCloudRain,
+  faWind,
+  faEye,
+  faGift,
+  faFlag,
+} from "@fortawesome/free-solid-svg-icons";
+
+export const ICON_MAP = {
+  anchor: faAnchor,
+  bolt: faBolt,
+  cube: faCube,
+  leaf: faLeaf,
+  rocket: faRocket,
+  star: faStar,
+  moon: faMoon,
+  sun: faSun,
+  heart: faHeart,
+  diamond: faDiamond,
+  cloud: faCloud,
+  fire: faFire,
+  snowflake: faSnowflake,
+  "cloud-rain": faCloudRain,
+  wind: faWind,
+  eye: faEye,
+  gift: faGift,
+  flag: faFlag,
+};
+
+export const ICON_KEYS = Object.keys(ICON_MAP);

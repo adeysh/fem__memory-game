@@ -1,0 +1,277 @@
+/* Atkinson Hyperlegible font */
+@import url("https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:wght@400;700&display=swap");
+
+@import "tailwindcss";
+
+@theme {
+  /* COLORS */
+  --color-orange: #fda214;
+  --color-orange-hover: #ffb84a;
+
+  --color-blue-light: #dfe7ec;
+  --color-blue-100: #bcced9;
+  --color-blue-200: #6395b8;
+  --color-blue-300: #7191a5;
+  --color-blue-400: #304859;
+  --color-blue-500: #152938;
+
+  --color-white-100: #fcfcfc;
+  --color-white-200: #f2f2f2;
+
+  /* FONT */
+  --font-sans: "Atkinson Hyperlegible", system-ui, sans-serif;
+
+  /* FONT SIZES */
+  --text-h1: clamp(1.5rem, 0.971830985915493rem + 2.253521126760563vw, 3rem);
+  --text-h2: clamp(
+    1.125rem,
+    0.8169014084507042rem + 1.3145539906103285vw,
+    2rem
+  );
+  --text-h3: clamp(
+    1.125rem,
+    1.0809859154929577rem + 0.18779342723004694vw,
+    1.25rem
+  );
+  --text-body: 18px;
+
+  /* info */
+  --text-info-label: clamp(
+    0.9375rem,
+    0.8714788732394366rem + 0.2816901408450704vw,
+    1.125rem
+  );
+  --text-info-detail: clamp(
+    1.5rem,
+    1.323943661971831rem + 0.7511737089201878vw,
+    2rem
+  );
+
+  /* menu selection */
+  --text-menu-selection: clamp(
+    1rem,
+    0.7799295774647887rem + 0.9389671361502347vw,
+    1.625rem
+  );
+
+  --text-menu-selection-label: clamp(
+    0.9375rem,
+    0.8274647887323944rem + 0.4694835680751174vw,
+    1.25rem
+  );
+
+  /* grid-size */
+  --text-number-4x4: clamp(
+    2.5rem,
+    2.147887323943662rem + 1.5023474178403755vw,
+    3.5rem
+  );
+  --text-number-6x6: clamp(
+    1.5rem,
+    1.0598591549295775rem + 1.8779342723004695vw,
+    2.75rem
+  );
+
+  /* result menu subheading */
+  --text-results-menu-subheading: clamp(
+    0.875rem,
+    0.7869718309859155rem + 0.3755868544600939vw,
+    1.125rem
+  );
+
+  /* PADDING */
+  --spacing-block-primary-button: clamp(
+    1.75rem,
+    8.51056338028169rem + -7.511737089201878vw,
+    6.75rem
+  );
+
+  /* primary menu button */
+  --spacing-block-primary-menu-button: clamp(
+    0.625rem,
+    0.5369718309859155rem + 0.3755868544600939vw,
+    0.875rem
+  );
+  --spacing-inline-primary-menu-button: clamp(
+    1.125rem,
+    0.9049295774647887rem + 0.9389671361502347vw,
+    1.75rem
+  );
+
+  /* secondary button */
+  --spacing-block-secondary-button: clamp(
+    1.75rem,
+    4.961267605633803rem + -3.568075117370892vw,
+    4.125rem
+  );
+
+  /* menu selection */
+  --spacing-block-menu-selection: clamp(
+    0.25rem,
+    0.073943661971831rem + 0.7511737089201878vw,
+    0.75rem
+  );
+  --spacing-inline-menu-selection: clamp(
+    1.25rem,
+    0.10563380281690149rem + 4.882629107981221vw,
+    4.5rem
+  );
+
+  /* menu button big */
+  --spacing-block-menu-button-big: clamp(
+    0.25rem,
+    0.02992957746478872rem + 0.9389671361502347vw,
+    0.875rem
+  );
+  --spacing-inline-menu-button-big: clamp(
+    4rem,
+    1.337147887323944rem + 11.36150234741784vw,
+    11.5625rem
+  );
+
+  /* setup card */
+  --spacing-setup-card: clamp(
+    1.5rem,
+    -0.40839694656488557rem + 8.142493638676845vw,
+    3.5rem
+  );
+
+  /* logo setup screen */
+  --spacing-width-logo-setup-screen: clamp(
+    7.5rem,
+    6.839788732394366rem + 2.8169014084507045vw,
+    9.375rem
+  );
+  --spacing-height-logo-setup-screen: clamp(
+    2.5rem,
+    2.2799295774647885rem + 0.9389671361502347vw,
+    3.125rem
+  );
+
+  /* logo game screen */
+  --spacing-width-logo-game-screen: clamp(
+    5.75rem,
+    4.473591549295775rem + 5.446009389671361vw,
+    9.375rem
+  );
+  --spacing-height-logo-game-screen: clamp(
+    1.625rem,
+    1.9630281690140845rem + -0.3755868544600939vw,
+    1.875rem
+  );
+
+  /* grid size */
+  --spacing-flip-card-4x4: clamp(
+    4.5rem,
+    1.756679389312977rem + 11.704834605597965vw,
+    7.375rem
+  );
+  --spacing-flip-card-6x6: clamp(
+    2.875rem,
+    0.7280534351145036rem + 9.160305343511451vw,
+    5.125rem
+  );
+
+  /* container */
+  --spacing-setup-container: clamp(
+    2.8125rem,
+    0.8444656488549618rem + 8.396946564885496vw,
+    4.875rem
+  );
+
+  /* card container */
+  --spacing-setup-card-container: clamp(
+    1.5rem,
+    1.0229007633587786rem + 2.035623409669211vw,
+    2rem
+  );
+
+  /* RADIUS */
+  --radius-xs: 10px;
+  --radius-sm: 26px;
+  --radius-md: 36px;
+}
+
+@layer base {
+  body {
+    @apply min-h-screen font-sans;
+  }
+
+  body.setup,
+  body.finished {
+    @apply text-white-200 bg-blue-500;
+  }
+
+  body.playing {
+    @apply bg-white-100 text-blue-500;
+  }
+}
+
+#root {
+  @apply flex min-h-screen flex-col items-center justify-center;
+}
+
+button {
+  @apply font-bold;
+}
+
+* {
+  /* Applies transition for colors, duration, and ease-in-out timing globally */
+  @apply transition duration-300 ease-in-out;
+}
+
+@layer components {
+  /* current player arrow */
+  .active-player {
+    position: relative;
+  }
+  .active-player::after {
+    background-color: var(--color-white-100);
+    position: absolute;
+    top: -15px;
+    left: 50%;
+    height: 0;
+    width: 0;
+    translate: -50% 0;
+    content: "";
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-bottom: 16px solid var(--color-orange);
+  }
+
+  @media screen and (width >= 48rem) {
+    .active-player::after {
+      border-left: 28px solid transparent;
+      border-right: 28px solid transparent;
+      border-bottom: 38px solid var(--color-orange);
+      top: -36px;
+    }
+  }
+}
+
+@layer utilities {
+  .tabular-nums {
+    font-variant-numeric: tabular-nums;
+  }
+}
+
+/* footer */
+.attribution {
+  font-size: 0.875rem;
+  text-align: center;
+  color: var(--color-text);
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+.attribution a:hover {
+  color: hsl(228, 45%, 55%);
+  transition: color 0.3s ease;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    transition: none;
+  }
+}

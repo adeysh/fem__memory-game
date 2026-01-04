@@ -1,0 +1,17 @@
+export const ACTIONS = Object.freeze({
+  // Setup
+  SET_SETTINGS: "SET_SETTINGS",
+  START_GAME: "START_GAME",
+
+  // Gameplay
+  FLIP_CARD: "FLIP_CARD",
+  CHECK_MATCH: "CHECK_MATCH",
+  CLEAR_RECENT_MATCH: "CLEAR_RECENT_MATCH",
+
+  // Lifecycle
+  RESTART_GAME: "RESTART_GAME",
+  NEW_GAME: "NEW_GAME",
+
+  // Timer
+  TICK_TIMER: "TICK_TIMER",
+});

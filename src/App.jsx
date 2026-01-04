@@ -64,8 +64,8 @@ function App() {
   }
 
   return (
-    <div className="flex w-full flex-col">
-      <main className="flex min-h-screen flex-1 flex-col justify-center">
+    <div className="flex w-full flex-col gap-20">
+      <main className="flex min-h-screen flex-1 flex-col items-center justify-center">
         {content}
       </main>
       <Footer />

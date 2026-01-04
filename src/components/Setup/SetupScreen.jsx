@@ -9,7 +9,7 @@ export default function SetupScreen({ state, setSettings, startGame }) {
   const { settings } = state;
 
   return (
-    <div className="gap-setup-container flex flex-col items-center justify-center px-6 md:px-0">
+    <div className="gap-setup-container flex max-w-2xl flex-col items-center justify-center px-6 py-20 md:px-0">
       {/* logo */}
       <Logo className="fill-white-100 w-width-logo-setup-screen h-height-logo-setup-screen" />
 

@@ -64,7 +64,7 @@ function App() {
   }
 
   return (
-    <div className="flex flex-col">
+    <div className="flex w-full flex-col">
       <main className="flex min-h-screen flex-1 flex-col justify-center">
         {content}
       </main>
